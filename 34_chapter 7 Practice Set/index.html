@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Video 34</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>Home</li>
+      <li>Blog</li>
+      <li>About me</li>
+      <li>Contact</li>
+    </ul>
+  </nav>
+  <!-- <table>
+    <tr>Hello1</tr>
+    <tr>Hello2</tr>
+    <tr>Hello3</tr>
+    <tr>Hello4</tr>
+  </table> -->
+
+  <div class="container">
+    <div id = "id1" class="box1">This is box1</div>
+    <div id = "id2" class="box2">This is box2</div>
+    <div id = "id3" class="box3">This is box3</div>
+  </div>
+  <script>
+    //Problem 1
+    // document.getElementsByTagName("nav")[0].firstElementChild.style.color = "red";
+
+    //Problem 2
+    // Create  a Table without tbody and check view page source tbody is present or not.
+
+    //Problem 3
+    document.getElementsByTagName("div")[0].firstElementChild.style.color = "green"; 
+    
+    document.getElementsByTagName("div")[0].lastElementChild.style.color = "green";
+
+    //Problem 4
+    Array.from(document.getElementsByTagName("li")).forEach((element) => {
+      element.style.background = "cyan";
+    });
+
+    //Problem 5
+    // which of the following is used to look for the farthest ancester that matches a given css selector
+    // a)matches b)closest c) contains d)none of these
+    //Answer - d)
+  </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video 26</title>
+  </head>
+  <body>
+    Hello World!
+    <script>
+      let playAgain = true;
+
+      while (playAgain) {
+        const characters = "SWG";
+
+        const randomInd = Math.floor(Math.random() * characters.length);
+
+        let computer = characters.charAt(randomInd);
+        let userInput = prompt(
+          "Choose the first letter from any of these words: (Snake-0, Water-1, Gun-2): "
+        );
+
+        if (userInput == "S" && computer == "S") {
+          alert("Computer has choose " + computer);
+          alert("Draw!");
+        } else if (userInput == "S" && computer == "W") {
+          alert("Computer has choose " + computer);
+          alert("You won...");
+        } else if (userInput == "S" && computer == "G") {
+          alert("Computer has choose " + computer);
+          alert("computer won...");
+        } else if (userInput == "W" && computer == "W") {
+          alert("Computer has choose " + computer);
+          alert("Draw!");
+        } else if (userInput == "W" && computer == "S") {
+          alert("Computer has choose " + computer);
+          alert("computer won...");
+        } else if (userInput == "W" && computer == "G") {
+          alert("Computer has choose " + computer);
+          alert("You won...");
+        } else if (userInput == "G" && computer == "G") {
+          alert("Computer has choose " + computer);
+          alert("Draw!");
+        } else if (userInput == "G" && computer == "S") {
+          alert("Computer has choose " + computer);
+          alert("You won...");
+        } else if (userInput == "G" && computer == "W") {
+          alert("Computer has choose " + computer);
+          alert("computer won...");
+        } else {
+          break;
+        }
+        playAgain = confirm("Do you want to play again?");
+      }
+    </script>
+  </body>
+</html>
